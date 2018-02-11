@@ -23,9 +23,9 @@ span.card-title {
     padding-left: 1rem;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 p {
 	-webkit-font-smoothing: antialiased;
@@ -43,4 +43,12 @@ ul.footer-det li {
 nav.bg-light {
 	background: #ee6e73!important;
 	margin-bottom: 50px;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
 }
