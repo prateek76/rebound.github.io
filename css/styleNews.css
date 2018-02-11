@@ -15,10 +15,15 @@ span.card-title {
     padding-left: 1rem;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 p {
 	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
