@@ -1,0 +1,19 @@
+section {
+	padding: 5px;
+}
+
+div.card {
+	width: 400px;
+	padding: 25px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+span.card-title {
+	font-family: "Roboto", sans-serif;
+}
