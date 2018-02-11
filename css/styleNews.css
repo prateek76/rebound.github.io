@@ -9,11 +9,12 @@ div.card {
 	margin-bottom: 20px;
 	}
 
+span.card-title {
+    font-family: "Roboto", sans-serif;
+    border-left: 5px solid #ee6e73;
+    padding-left: 1rem;
+}
 
 ::-webkit-scrollbar { 
     display: none; 
-}
-
-span.card-title {
-	font-family: "Roboto", sans-serif;
 }
