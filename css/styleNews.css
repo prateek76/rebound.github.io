@@ -23,9 +23,9 @@ span.card-title {
     padding-left: 1rem;
 }
 
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-}*/
+}
 
 p {
 	-webkit-font-smoothing: antialiased;
