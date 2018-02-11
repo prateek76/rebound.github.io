@@ -14,10 +14,19 @@ request.onload = function() {
   shownews(news);
 }
 
+function ValidURL(str) {
+  var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+  if(!regex .test(str)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 function shownews(jsonObj) {
   var heroes = jsonObj['articles'];
   console.log(jsonObj['articles']);
-      
+
   for (var i = 0; i < heroes.length; i++) {
     var row = document.createElement('div');
     row.setAttribute('class','row');
@@ -34,21 +43,21 @@ function shownews(jsonObj) {
     var button = document.createElement('a');
     button.setAttribute('class','btn-floating halfway-fab waves-effect waves-light red');
     button.setAttribute('href',heroes[i].url);
-    var ii = document.createElement('i');    
+    var ii = document.createElement('i');
     ii.setAttribute('class','material-icons');
-    ii.textContent = "add";
+    ii.textContent = "more";
 
     var cardContent = document.createElement('div');
     cardContent.setAttribute("class","card-content");
     var myPara1 = document.createElement('p');
-    
+
     spana.textContent = heroes[i].title;
     myPara1.textContent = heroes[i].description;
 
 
 
-    
-    if(heroes[i].urlToImage != null) {
+
+    if(heroes[i].urlToImage != null && ValidURL(heroes[i].urlToImage)) {
       cardImage.appendChild(pic);
     }
     cardContent.appendChild(spana);
