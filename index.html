@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>|\|</title>
     <link rel="icon" href="./icon.png" type="image/gif" sizes="16x16">
+
     <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
     <link href="https://fonts.googleapis.com/css?family=Bellefair|Roboto+Condensed|Sedgwick+Ave+Display" rel="stylesheet">
     <link rel="stylesheet" href="css/styleNews.css">
@@ -27,16 +28,15 @@
   </head>
 
   <body>
+    <!--pre loader-->
     <div class="se-pre-con"></div>
 
-    <nav style="margin-bottom:50px">
-      <div class="nav-wrapper">
-         <a href="#" class="brand-logo"><img style="width:44px;height:44px;margin-left:20px;" src="icon.png"></a>
-       </div>
-      </nav>
-      <section>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand"><img style="width:44px;height:44px;margin-left:20px;" src="icon.png"></a>
+    </nav>
+    <section>
 
-      </section>
+    </section>
 
       <footer class="page-footer">
          <div class="container">
@@ -65,12 +65,11 @@
     <script type="text/javascript" src="js/scriptNews.js"></script>
     <script>
     $(window).on('load',function(){
-
       setTimeout(function(){
-       $(".se-pre-con").fadeOut("slow");
+      $(".se-pre-con").fadeOut("slow");
    },1500);
+   });
 
-      });
     </script>
 
 

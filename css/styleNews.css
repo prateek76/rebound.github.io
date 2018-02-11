@@ -11,7 +11,7 @@
 }
 
 section {
-	padding: 5px;
+	padding: 10.5px;
 }
 
 div.card {
@@ -40,6 +40,11 @@ a {
 	color: inherit;
 }
 
-ul.footer-det li{
+ul.footer-det li {
 	margin-right: 10px;
+}
+
+nav.navbar {
+	background: #ee6e73!important;
+	margin-bottom: 50px;
 }
