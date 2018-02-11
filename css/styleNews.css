@@ -18,3 +18,7 @@ span.card-title {
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+p {
+	-webkit-font-smoothing: antialiased;
+}

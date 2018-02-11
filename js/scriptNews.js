@@ -48,7 +48,9 @@ function shownews(jsonObj) {
 
 
     
-    cardImage.appendChild(pic);
+    if(heroes[i].urlToImage != null) {
+      cardImage.appendChild(pic);
+    }
     cardContent.appendChild(spana);
     cardContent.appendChild(myPara1);
     cardImage.appendChild(button);
