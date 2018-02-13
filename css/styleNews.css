@@ -10,11 +10,29 @@
 	background: url('../Preloader_3.gif') center no-repeat #fff;
 }
 
-div.card {
+
+div.page-header {
+	text-align: center;
+	border-bottom: 2px solid #ee6e73;
+	margin-bottom: 40px;
+}
+
+section {
+	margin-left: 45px;
+}
+
+section div.row {
+	display: inline-block;
+}
+
+section div.card {
 	width: 350px;
 	padding: 15px;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	margin-right: 20px;
+	height: 600px;
+	overflow: hidden;
 	}
 
 span.card-title {
@@ -51,4 +69,23 @@ html {
 
 body {
 	overflow-x: hidden;
+	background: linear-gradient(45deg,#f2ebb9,#fff);
+}
+
+@media only screen and (max-width: 500px) {
+    section div.card {
+		width: 350px;
+		padding: 15px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		display: block;
+	}
+
+	section div.row {
+		display: block;
+	}
+
+	section {
+		margin-left: 0;
+	}
 }

@@ -7,6 +7,7 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 
 request.responseType = 'json';
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 request.send();
 
 request.onload = function() {
