@@ -79,6 +79,7 @@ body {
 		margin: 0 auto;
 		margin-bottom: 20px;
 		display: block;
+		height: auto;
 	}
 
 	section div.row {
