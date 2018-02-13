@@ -1,6 +1,6 @@
 
 
-# Project Title
+# news reader
 
 rebound.github.io
 this site shows top 10 news by
