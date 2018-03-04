@@ -44,6 +44,23 @@ function shownews(jsonObj) {
     var button = document.createElement('a');
     button.setAttribute('class','btn-floating halfway-fab waves-effect waves-light red');
     button.setAttribute('href',heroes[i].url);
+    /***
+    ******
+    ******
+    ***/
+    var sup = document.createElement('a');
+    sup.setAttribute('class','dropdown-button halfway-fab btn-floating waves-effect waves-light whatsapp');
+    sup.setAttribute('style','margin-right:50px;');
+    sup.setAttribute('href','whatsapp://send');
+    sup.setAttribute('data-text', heroes[i].title);
+    sup.setAttribute('data-link','https://prateek76.github.io/rebound.github.io/');
+    var ii2 = document.createElement('i');
+    ii2.setAttribute('class','material-icons');
+    ii2.textContent = "share";
+    /***
+    ******
+    ******
+    ***/
     var ii = document.createElement('i');
     ii.setAttribute('class','material-icons');
     ii.textContent = "more";
@@ -63,8 +80,11 @@ function shownews(jsonObj) {
     }
     cardContent.appendChild(spana);
     cardContent.appendChild(myPara1);
+    cardImage.appendChild(sup);
     cardImage.appendChild(button);
+    
     button.appendChild(ii);
+    sup.appendChild(ii2);
     parent_div.appendChild(cardImage);
     parent_div.appendChild(cardContent);
     col12.appendChild(parent_div);
