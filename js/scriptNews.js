@@ -51,7 +51,6 @@ function shownews(jsonObj) {
     var sup = document.createElement('a');
     sup.setAttribute('class','dropdown-button halfway-fab btn-floating waves-effect waves-light whatsapp');
     sup.setAttribute('style','margin-right:50px;');
-    var text = encodeURI(heroes[i].title);
     sup.setAttribute('data-text', heroes[i].title);
     sup.setAttribute('data-link','https://prateek76.github.io/rebound.github.io/');
     var ii2 = document.createElement('i');
