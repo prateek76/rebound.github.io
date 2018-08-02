@@ -15,9 +15,9 @@ request.onload = function() {
   shownews(news);
 }
 
-text_truncate = function(str) {
-    if (str.length > 100) {
-      return str.substring(0, 100)+'...';
+text_truncate = function(str,size) {
+    if (str.length > size) {
+      return str.substring(0, size)+'...';
     } else {
       return str;
     }
@@ -76,8 +76,8 @@ function shownews(jsonObj) {
     cardContent.setAttribute("class","card-content");
     var myPara1 = document.createElement('p');
 
-    spana.textContent = heroes[i].title;
-    myPara1.textContent = text_truncate(heroes[i].description);
+    spana.textContent = text_truncate(heroes[i].title,100);
+    myPara1.textContent = text_truncate(heroes[i].description,180);
 
 
 
