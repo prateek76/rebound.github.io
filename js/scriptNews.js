@@ -16,8 +16,8 @@ request.onload = function() {
 }
 
 text_truncate = function(str) {
-    if (str.length > 1000) {
-      return str.substring(0, 1000)+'...';
+    if (str.length > 100) {
+      return str.substring(0, 100)+'...';
     } else {
       return str;
     }
