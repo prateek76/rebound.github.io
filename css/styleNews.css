@@ -17,9 +17,7 @@ div.page-header {
 	margin-bottom: 40px;
 }
 
-section {
-	margin-left: 45px;
-}
+section {margin:  auto;width:  100%;padding-left:  170px;}
 
 section div.row {
 	display: inline-block;
@@ -33,6 +31,7 @@ section div.card {
 	margin-right: 20px;
 	height: 600px;
 	overflow: hidden;
+	box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 	}
 
 span.card-title {
@@ -69,7 +68,7 @@ html {
 
 body {
 	overflow-x: hidden;
-	background: linear-gradient(45deg,#f2ebb9,#fff);
+	background: linear-gradient(45deg,#d9ca5a,#fff);
 }
 
 @media only screen and (max-width: 500px) {
@@ -91,4 +90,3 @@ body {
 	}
 }
 /*temp.css*/
-
