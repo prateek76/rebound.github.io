@@ -73,6 +73,7 @@ body {
 
 @media only screen and (max-width: 500px) {
     section div.card {
+	    	margin-left: 0!important;
 		width: 350px;
 		padding: 15px;
 		margin: 0 auto;
