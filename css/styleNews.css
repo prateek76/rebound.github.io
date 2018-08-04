@@ -73,8 +73,8 @@ body {
 
 @media only screen and (max-width: 500px) {
     section div.card {
-	    	margin-left: 0!important;
-		width: 350px;
+	    margin-left: 0!important;
+		width: 100%;
 		padding: 15px;
 		margin: 0 auto;
 		margin-bottom: 20px;
@@ -88,7 +88,7 @@ body {
 
 	section {
 		margin-left: 0;
-		padding-left: 0;
+		padding-left:0%;
 	}
 }
 /*temp.css*/
